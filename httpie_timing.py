@@ -114,7 +114,6 @@ class TimingFormatterPlugin(FormatterPlugin):
 
     def format_headers(self, headers):
 
-        pprint(dir(self.kwargs['env']))
         try:
             output_method = self.kwargs['env'].config[CONFIG_KEY][OUTPUT_KEY]
         except KeyError:
